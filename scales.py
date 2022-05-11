@@ -9,10 +9,10 @@ class Scale():
 		sharpsRawScale = ["A","A#","B","C","C#","D","D#","E","F","F#","G","G#"]
 		
 		# Flats key or Sharp Key?
-		if self.key in flatsRawScale:
+		if self.key in ["C","F","Bb","Eb","Ab","Db","Gb"]:
 			self.flatsOrSharps = "flats"
 			self.rawscale = flatsRawScale
-		if self.key in sharpsRawScale:
+		else:
 			self.flatsOrSharps = "sharps"
 			self.rawscale = sharpsRawScale
 
