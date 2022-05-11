@@ -1,8 +1,9 @@
 class Scale():
 	def __init__(self, key):
 		self.key = key.upper()
-		self.allNotes = ["A","Bb","B","C","Db","D","Eb","E","F","Gb","G","Ab",
-						"A#","B","C","C#","D","D#","E","F","F#","G","G#"]
+		self.allNotes = [
+			"A","Bb","B","C","Db","D","Eb","E","F","Gb","G","Ab",
+			"A#","B","C","C#","D","D#","E","F","F#","G","G#"]
 
 		# raw chromatic note sets
 		flatsRawScale = ["A","Bb","B","C","Db","D","Eb","E","F","Gb","G","Ab"]
@@ -27,16 +28,10 @@ class Scale():
 				self.rangedScale.append(self.scale[i] + str(r))
 
 	def assignMidiNums(self):
-		lowestMidiNums = {"sharps":
-							{'A': 21, 'A#': 22, 'B': 23, 
-							'C': 24, 'C#': 25, 'D': 26, 
-							'D#': 27, 'E': 28, 'F': 29, 
-							'F#': 30, 'G': 31, 'G#': 32},
-						"flats":{
-							'A': 21, 'Bb': 22, 'B': 23, 
-							'C': 24, 'Db': 25, 'D': 26, 
-							'Eb': 27, 'E': 28, 'F': 29, 
-							'Gb': 30, 'G': 31, 'Ab': 32}
+		lowestMidiNums = {"sharps":{ 'A': 21, 'A#': 22, 'B': 23, 'C': 24, 'C#': 25, 'D': 26, 
+						'D#': 27, 'E': 28, 'F': 29, 'F#': 30, 'G': 31, 'G#': 32},
+						"flats":{ 'A': 21, 'Bb': 22, 'B': 23, 'C': 24, 'Db': 25, 'D': 26, 
+						'Eb': 27, 'E': 28, 'F': 29, 'Gb': 30, 'G': 31, 'Ab': 32}
 						}
 		
 		# midiNumsDict is a little redundant, but easier to read for humans
