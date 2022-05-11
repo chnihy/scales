@@ -1,5 +1,5 @@
 # Scales
-Scales is a simple module for creation of scales for MIDI software.
+Scales is a simple module for creation of ranged scales.
 
 It's very easy to work with
 ```python
